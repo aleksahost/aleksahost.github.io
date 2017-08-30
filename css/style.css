@@ -145,6 +145,7 @@ a:hover {
   width: 500px;
   height: 350px;
 }
+
 .contact {
   list-style-type: none;
   padding: 30px;
@@ -179,6 +180,7 @@ a:hover {
    display: none;
  }
 
+ }
  .pricetable > thead > tr > th:first-of-type {
    width: 75%;
  }
@@ -215,13 +217,13 @@ a:hover {
     text-indent:-9999px;
     background: url('../images/icon_top.png') no-repeat;
 }
- @media screen and (max-width: 100px) {
-   .fon{
-    display: none;
-   }
- }
+
 @media screen and (max-width: 700px) {
   .images {
+    display: none;
+  }
+
+  #realmap {
     display: none;
   }
 }
@@ -229,5 +231,8 @@ a:hover {
 @media screen and (max-width:1200px) {
   .anime {
 display: none;
+  }
+  #realmap {
+    display: none;
   }
 }
