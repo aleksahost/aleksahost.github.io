@@ -240,7 +240,15 @@ display: none;
 @media screen and (max-width: 700px) {
   .otstup {
     max-width: 550px;
-    margin: 0;
+    margin: 0 0 0 -70px;
+  }
+
+}
+
+@media screen and (max-width: 250px) {
+  .fon {
+    display: none;
+
   }
 
 }
