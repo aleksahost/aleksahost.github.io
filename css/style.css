@@ -198,13 +198,11 @@ a:hover {
 
 }
 
-.faf {
+.btn {
   color: #555;
   font-size: 40px;
 }
-.fa-vk:before {
-  content: "\f189";
-}
+
 .pricetable td {
   color: #555;
 }
