@@ -202,7 +202,9 @@ a:hover {
   color: #555;
   font-size: 40px;
 }
-
+.fa-vk:before {
+  content: "\f189";
+}
 .pricetable td {
   color: #555;
 }
@@ -248,6 +250,8 @@ display: none;
 @media screen and (max-width: 250px) {
   .fon {
     display: none;
+    width: 1000px;
+    height: 500px;
 
   }
 
