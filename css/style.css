@@ -171,7 +171,7 @@ a:hover {
  }
 
  .table {
-   margin-top: 50px;
+   margin-top: 56px;
    background-color: #222;
    color: #fff;
  }
@@ -232,6 +232,17 @@ a:hover {
   .anime {
 display: none;
   }
+  #realmap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .otstup {
+    max-width: 550px;
+    margin: 0;
+  }
+
   #realmap {
     display: none;
   }
