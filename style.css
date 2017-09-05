@@ -26,19 +26,14 @@ p {
 .textL {
   font-family: 'Lombok'
 }
+.site {
+  max-width: 1140px;
+  margin: -5px auto;
+  position: relative;
+  height: auto;
+  background-color: #222;
 
-
-/*.site {*/
-  /*max-width: 1140px;*/
-  /*margin: -5px auto;*/
-  /*position: relative;*/
-  /*height: auto;*/
-  /*background-color: #222;*/
-  /**/
-  /*в корне не верный подход к управлению шириной. Такой метод проканал бы без bootstrap. Но поскольку он есть то управлять шириной нужно его методами, а именно через .container*/
-  /*см. https://getbootstrap.com/docs/3.3/css/#grid-media-queries*/
-  /**/
-/*}*/
+}
 
 .fon {
   margin: 53px 0;
