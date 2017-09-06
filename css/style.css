@@ -71,6 +71,9 @@ h1, h2, h3 , h4 {
   margin: 0;
   padding: 50px;
 }
+.header {
+  text-align: center;
+}
 
 h3 {
   font-size: 1.65em;
