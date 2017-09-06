@@ -16,9 +16,13 @@ body {
   padding: 0;
 }
 
-body .site {
-  box-shadow: 0 0 7px 7px grey;
-}
+/*body .site {*/
+  /*box-shadow: 0 0 7px 7px grey;*/
+/* тут чтото бессмысленное. Тень и на body и на site. Это как?) на чтото одно. убрал пака вовсе. */
+
+/*}*/
+
+
 p {
   font-size: 17px;
   line-height: 1.7;
@@ -27,19 +31,39 @@ p {
   font-family: 'Lombok'
 }
 .site {
-  max-width: 1140px;
-  margin: -5px auto;
-  position: relative;
-  height: auto;
-  background-color: #222;
+  margin-top: 51px;
+/*max-width: 1140px;*/
+/*margin: -5px auto;*/
+/*position: relative;*/
+/*height: auto;*/
+/*background-color: #222;*/
+/**/
+/*в корне не верный подход к управлению шириной. Такой метод проканал бы без bootstrap. Но поскольку он есть то управлять шириной нужно его методами, а именно через .container*/
+/*см. https://getbootstrap.com/docs/3.3/css/#grid-media-queries*/
+/**/
+}
 
+.container {
+  background: #222;
 }
 
 .fon {
-  margin: 53px 0 0 25px;
-  text-align: center;
-  padding-left: 70px;
+  /*margin: 53px 0 0 25px;
+  этот отступ судя по всему компенсация высоты верхнего меню.
+  Только этот оступ нужно выставлять на максимально высоком родителе а не
+  на внутряке, в данном случае он должен быть на .site
+  перенес его туда.
+  */
 
+  text-align: center;
+  /*padding-left: 70px;
+  не понял зачем - убрал.
+  */
+
+}
+
+.fon img {
+  max-width: 100%;
 }
 
 .headerwrapdiv {
@@ -56,6 +80,7 @@ h1, h2, h3 , h4 {
   color: #fff;
   text-align: center;
 }
+
 .anime {
   margin: 25px 0;
 }
@@ -89,6 +114,7 @@ h1, h2, h3 , h4 {
   height: 50px;
   text-align: center;
 }
+
 .text {
   margin: 0;
   padding: 50px;
@@ -139,6 +165,7 @@ a:hover {
 .imagecontent img {
   max-width: 200px;
 }
+
 #map {
   margin: 0 1px;
   padding-top: 50px;
@@ -155,6 +182,7 @@ a:hover {
   line-height: 1.5;
   font-size: 25px;
 }
+
 .pz {
   min-height: 430px;
   padding-top: 28px;
@@ -164,34 +192,36 @@ a:hover {
 .carousel-ld {
   margin: 53px 10px 10px;
 }
- .otstup {
+
+.otstup {
    width: 1000px;
    margin: 0 48px;
    height: 370px
  }
 
- .table {
+.table {
    margin-top: 56px;
    background-color: #222;
    color: #fff;
  }
 
- .imgdemo{
+.imgdemo{
    display: none;
  }
 
- }
- .pricetable > thead > tr > th:first-of-type {
+.pricetable > thead > tr > th:first-of-type {
    width: 75%;
  }
 
- .pricetable > thead > tr > th:nth-of-type(2) {
+.pricetable > thead > tr > th:nth-of-type(2) {
    width: 25%;
  }
+
 .leftimg {
   float:left;
     margin: 7px 7px 7px 0;
 }
+
 .righting {
   float: right;
     margin: 7px 7px 7px 0;
