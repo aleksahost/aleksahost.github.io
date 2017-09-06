@@ -16,105 +16,57 @@ body {
   padding: 0;
 }
 
-/*body .site {*/
-  /*box-shadow: 0 0 7px 7px grey;*/
-/* тут чтото бессмысленное. Тень и на body и на site. Это как?) на чтото одно. убрал пака вовсе. */
-
-/*}*/
-
-
+body .site {
+  box-shadow: 0 0 7px 7px grey;
+}
 p {
-  font-size: 17px;
   line-height: 1.7;
 }
-.textL {
-  font-family: 'Lombok'
-}
+
 .site {
   margin-top: 51px;
-/*max-width: 1140px;*/
-/*margin: -5px auto;*/
-/*position: relative;*/
-/*height: auto;*/
-/*background-color: #222;*/
-/**/
-/*в корне не верный подход к управлению шириной. Такой метод проканал бы без bootstrap. Но поскольку он есть то управлять шириной нужно его методами, а именно через .container*/
-/*см. https://getbootstrap.com/docs/3.3/css/#grid-media-queries*/
-/**/
+  margin: -5px auto;
+  position: relative;
+  height: auto;
+  background-color: #222;
+
 }
 
-.container {
-  background: #222;
-}
-
-.fon {
-  /*margin: 53px 0 0 25px;
-  этот отступ судя по всему компенсация высоты верхнего меню.
-  Только этот оступ нужно выставлять на максимально высоком родителе а не
-  на внутряке, в данном случае он должен быть на .site
-  перенес его туда.
-  */
-
+.avatar{
+  margin: 53px 0 0 25px;
   text-align: center;
-  /*padding-left: 70px;
-  не понял зачем - убрал.
-  */
+  padding-left: 70px;
 
-}
-
-.fon img {
-  max-width: 100%;
-}
-
-.headerwrapdiv {
-  padding-bottom: 10px;
-  clear: both;
-  line-height: 2;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
 }
 
 h1, h2, h3 , h4 {
   color: #fff;
   text-align: center;
 }
-
 .anime {
   margin: 25px 0;
 }
 
-.headerdiv {
-  padding-bottom: 10px;
-  clear: both;
-  line-height: 2;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
-}
 
-.headerdiv p {
+.text p {
   padding-left: 5px;
   padding-bottom: 15px;
 }
 
-.footer {
+.page-footer {
   border-top: 1px solid #ededed;
   background: #222;
-  padding-bottom: 20px;
   clear: both;
   line-height: 2;
-  width: 100%;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 15px;
-  height: 50px;
+  height: 70px;
   text-align: center;
+  font-family: 'Lombok'
 }
 
+.f {
+  font-family: 'Lombok'
+}
 .text {
   margin: 0;
   padding: 50px;
@@ -126,7 +78,9 @@ h3 {
   border-bottom: 1px solid #333;
   padding: 25px;
 }
-
+.fotos {
+  margin-top: 40px;
+}
 a:link, a:visited {
   font-weight: bold;
   text-decoration: none;
@@ -165,7 +119,6 @@ a:hover {
 .imagecontent img {
   max-width: 200px;
 }
-
 #map {
   margin: 0 1px;
   padding-top: 50px;
@@ -182,7 +135,6 @@ a:hover {
   line-height: 1.5;
   font-size: 25px;
 }
-
 .pz {
   min-height: 430px;
   padding-top: 28px;
@@ -192,36 +144,34 @@ a:hover {
 .carousel-ld {
   margin: 53px 10px 10px;
 }
-
-.otstup {
+ .otstup {
    width: 1000px;
    margin: 0 48px;
    height: 370px
  }
 
-.table {
+ .table {
    margin-top: 56px;
    background-color: #222;
    color: #fff;
  }
 
-.imgdemo{
+ .imgdemo{
    display: none;
  }
 
-.pricetable > thead > tr > th:first-of-type {
+ }
+ .pricetable > thead > tr > th:first-of-type {
    width: 75%;
  }
 
-.pricetable > thead > tr > th:nth-of-type(2) {
+ .pricetable > thead > tr > th:nth-of-type(2) {
    width: 25%;
  }
-
 .leftimg {
   float:left;
     margin: 7px 7px 7px 0;
 }
-
 .righting {
   float: right;
     margin: 7px 7px 7px 0;
@@ -230,7 +180,9 @@ a:hover {
 
 .btn {
   color: #555;
-  font-size: 40px;
+  margin-left: 150px;
+  font-size: 1em;
+  height: 50px
 }
 
 .pricetable td {
@@ -246,6 +198,11 @@ a:hover {
     display:none;
     text-indent:-9999px;
     background: url('../images/icon_top.png') no-repeat;
+}
+@media (min-width: @screen-md-min) {
+.site {
+  max-width: 1140px;
+  }
 }
 
 @media screen and (max-width: 700px) {
