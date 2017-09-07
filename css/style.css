@@ -30,7 +30,7 @@ p {
   height: auto;
   background-color: #222;
   max-width: 1140px;
-  
+
 
 }
 
@@ -76,9 +76,6 @@ h1, h2, h3 , h4 {
 .text {
   margin: 0;
   padding: 50px;
-}
-.header {
-  text-align: center;
 }
 
 h3 {
@@ -130,7 +127,7 @@ a:hover {
 }
 #map {
   margin: 0 1px;
-  margin-left: 180px;
+  margin-left: 50px;
   padding-top: 50px;
   width: 500px;
   height: 350px;
