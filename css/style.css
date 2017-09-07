@@ -87,15 +87,6 @@ h3 {
 .fotos {
   margin-top: 40px;
 }
-a:link, a:visited {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fafafa;
-}
-
 .feature {
   border-radius: 0.35em;
   border: solid 1px rgba(255, 255, 255, 0.15);
@@ -186,11 +177,8 @@ a:hover {
 
 }
 
-.btn {
-  color: #555;
-  margin-left: 150px;
-  font-size: 1em;
-  height: 50px
+.ikonka {
+  width: 40px;
 }
 
 .pricetable td {
